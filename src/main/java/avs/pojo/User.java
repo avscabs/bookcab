@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Entity
 @Component
 @Table(name="user")
-public class User {
+public class User extends BasePOJO {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="id")
